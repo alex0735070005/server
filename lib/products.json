@@ -1,0 +1,110 @@
+[
+    {
+        "id":"1",
+        "name":"Nokia 5",
+        "manufacturer":"China",
+        "price":5000,
+        "image":"product.png",
+        "attr":{
+            "camera":"5mp",
+            "diagonal":"5",
+            "os":"android"
+        }
+    },
+    {
+        "id":"2",
+        "name":"Nokia 8",
+        "manufacturer":"China",
+        "price":16000,
+        "image":"product.png",
+        "attr":{
+            "camera":"16mp",
+            "diagonal":"7",
+            "os":"android"
+        }
+    },
+    {
+        "id":"3",
+        "name":"Nokia 6",
+        "manufacturer":"China",
+        "price":16000,
+        "image":"product.png",
+        "attr":{
+            "camera":"12mp",
+            "diagonal":"5",
+            "os":"android"
+        }
+    },
+    {
+        "id":"",
+        "name":"Samsung SE",
+        "manufacturer":"China",
+        "price":30000,
+        "image":"product.png",
+        "attr":{
+            "camera":"7mp",
+            "diagonal":"16",
+            "os":"linux"
+        }
+    },
+    {
+        "id":"5",
+        "name":"Samsung CC",
+        "manufacturer":"China",
+        "price":3000,
+        "image":"product.png",
+        "attr":{
+            "camera":"7mp",
+            "diagonal":"20",
+            "os":"Windows"
+        }
+    },
+    {
+        "id":"6",
+        "name":"Samsung BB114",
+        "manufacturer":"China",
+        "price":16000,
+        "image":"product.png",
+        "attr":{
+            "camera":"4mp",
+            "diagonal":"12",
+            "os":"windows"
+        }
+    },
+    {
+        "id":"7",
+        "name":"Aser EX 5556",
+        "manufacturer":"China",
+        "price":16000,
+        "image":"product.png",
+        "attr":{
+            "camera":"5mp",
+            "diagonal":"16",
+            "os":"linux"
+        }
+    },
+    {
+        "id":"8",
+        "name":"Aser XB 74000",
+        "manufacturer":"China",
+        "price":24000,
+        "image":"product.png",
+        "attr":{
+            "camera":"8mp",
+            "diagonal":"7",
+            "os":"Windows"
+        }
+    },
+    {
+        "id":"9",
+        "name":"Aser BB85555",
+        "manufacturer":"China",
+        "price":25000,
+        "image":"product.png",
+        "attr":{
+            "camera":"4mp",
+            "diagonal":"8",
+            "os":"windows"
+        }
+    }
+]
