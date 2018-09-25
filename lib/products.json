@@ -1,6 +1,5 @@
 [
     {
-        "id":"1",
         "name":"Nokia 5",
         "manufacturer":"China",
         "price":5000,
@@ -12,7 +11,6 @@
         }
     },
     {
-        "id":"2",
         "name":"Nokia 8",
         "manufacturer":"China",
         "price":16000,
@@ -24,7 +22,6 @@
         }
     },
     {
-        "id":"3",
         "name":"Nokia 6",
         "manufacturer":"China",
         "price":16000,
@@ -36,7 +33,6 @@
         }
     },
     {
-        "id":"",
         "name":"Samsung SE",
         "manufacturer":"China",
         "price":30000,
@@ -48,7 +44,6 @@
         }
     },
     {
-        "id":"5",
         "name":"Samsung CC",
         "manufacturer":"China",
         "price":3000,
@@ -60,7 +55,6 @@
         }
     },
     {
-        "id":"6",
         "name":"Samsung BB114",
         "manufacturer":"China",
         "price":16000,
@@ -72,7 +66,6 @@
         }
     },
     {
-        "id":"7",
         "name":"Aser EX 5556",
         "manufacturer":"China",
         "price":16000,
@@ -84,7 +77,6 @@
         }
     },
     {
-        "id":"8",
         "name":"Aser XB 74000",
         "manufacturer":"China",
         "price":24000,
@@ -96,7 +88,6 @@
         }
     },
     {
-        "id":"9",
         "name":"Aser BB85555",
         "manufacturer":"China",
         "price":25000,

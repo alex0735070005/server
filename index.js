@@ -1,8 +1,14 @@
-var express = require('express');
-var products = require('./lib/products.json');
+var express             = require('express');
+
+const { MongoClient }   = require("mongodb");
+
+const dbName = 'shop_db';
+const url    = 'mongodb://localhost:27017'; 
+
 
 var app = express();
 
+app.use(express.json());
 
 app.options("/*", function(req, res, next){
   res.header('Access-Control-Allow-Origin', '*');
@@ -15,22 +21,57 @@ app.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
-app.get('/products', function (req, res) {
-  res.send('Hello products!');
-});
-
 app.post('/get-products', (request, response) => 
 {
     response.setHeader('Access-Control-Allow-Origin', '*');
     response.status(200);
-    response.send(products);
+    
+    (async ()=>
+    {
+        const client     = await MongoClient.connect(url, { useNewUrlParser: true });
+    
+        const db         = client.db(dbName);
+    
+        const collection = db.collection('products');
+        //var products = require('./lib/products.json');
+        //collection.insertMany(products)
+        
+        collection.find().toArray(function(err, products) 
+        {
+            client.close();
+            response.send(products);
+        });
+    
+    })();
 })
 
 app.post('/add-orders', (request, response) => 
 {
+    console.log(request.body);
+
     response.setHeader('Access-Control-Allow-Origin', '*');
     response.status(200);
-    response.send({success:true});
+    
+
+    (async ()=>
+    {
+        const client     = await MongoClient.connect(url, { useNewUrlParser: true });
+        const db         = client.db(dbName);
+        const collection = db.collection('orders');
+        
+        const data = request.body.products.map((el)=>{
+           delete el._id;
+           el.customer = request.body.customer
+           return el;
+        })
+
+        collection.insertMany(data);
+
+        client.close();
+
+        response.send({success:true});
+        
+    })();
 })
 
 app.listen(3000, function () {
